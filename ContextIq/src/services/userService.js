@@ -8,16 +8,16 @@ const req = (url, options = {}) =>
     }).then(r => r.json());
 
 export const getProfile = () =>
-    req("/users/profile");  // GET — app load pe call hoga
+    req("api/v1/users/profile");  // GET — app load pe call hoga
 
 export const updateProfile = (data) =>
-    req("/users/updateProfile", {
+    req("api/v1/users/updateProfile", {
         method: "PUT",
         body: JSON.stringify(data)  // { username, email }
     });
 
 export const updatePassword = (data) =>
-    req("/users/changePassword", {
+    req("api/v1/users/changePassword", {
         method: "PUT",
         body: JSON.stringify(data)  // { currentPassword, newPassword }
     });

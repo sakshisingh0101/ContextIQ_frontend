@@ -8,16 +8,16 @@ const req = (url, options = {}) =>
     }).then(r => r.json());
 
 export const createConversation = (data) =>
-    req("/chat/createConversation", {
+    req("api/v1/chat/createConversation", {
         method: "POST",
         body: JSON.stringify(data)  // { documentId, title }
     });
 
 export const sendMessage = (conversationId, message) =>
-    req(`/chat/sendMessage/${conversationId}`, {
+    req(`api/v1/chat/sendMessage/${conversationId}`, {
         method: "POST",
         body: JSON.stringify({ message })
     });
 
 export const getConversation = (conversationId) =>
-    req(`/chat/getConversation/${conversationId}`);
+    req(`api/v1/chat/getConversation/${conversationId}`);
