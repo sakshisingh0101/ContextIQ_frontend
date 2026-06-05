@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Sidebar.jsx";
 import {
     setConversationId,
     setMessages,

@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import Sidebar from "../components/Sidebar";
-import { setDocuments, removeDocument } from "../redux/documentSlice";
-import { getDocuments, deleteDocument } from "../services/documentService";
+import Sidebar from "../components/Sidebar.jsx";
+import { setDocuments, removeDocument } from "../redux/documentSlice.js";
+import { getDocuments, deleteDocument } from "../services/documentService.js";
 
 const Dashboard = () => {
     const navigate = useNavigate();

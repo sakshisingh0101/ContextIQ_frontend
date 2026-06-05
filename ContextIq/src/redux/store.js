@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import authReducer from "./authSlice";
-import documentReducer from "./documentSlice";
-import chatReducer from "./chatSlice";      // ← chatgptSlice se rename ke baad sahi
+import authReducer from "./authSlice.js";
+import documentReducer from "./documentSlice.js";
+import chatReducer from "./chatSlice.js";      // ← chatgptSlice se rename ke baad sahi
 
 export const store = configureStore({
     reducer: {

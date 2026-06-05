@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import Header from "../components/Header";
-import { setCredentials } from "../redux/authSlice";
-import { login } from "../services/authService";
+import Header from "../components/Header.jsx";
+import { setCredentials } from "../redux/authSlice.jsx";
+import { login } from "../services/authService.jsx";
 
 const LoginPage = () => {
     const navigate = useNavigate();

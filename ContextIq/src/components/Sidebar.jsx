@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../redux/authSlice";
-import { logout as logoutApi } from "../services/authService";
+import { logout } from "../redux/authSlice.js";
+import { logout as logoutApi } from "../services/authService.js";
 
 const Sidebar = () => {
     const navigate = useNavigate();

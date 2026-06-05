@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
-import { setCredentials } from "../redux/authSlice";
-import { updateProfile, updatePassword} from "../services/userService";
-import { deleteAllDocuments } from "../services/documentService";
-import { setDocuments } from "../redux/documentSlice";
+import Sidebar from "../components/Sidebar.jsx";
+import { setCredentials } from "../redux/authSlice.js";
+import { updateProfile, updatePassword} from "../services/userService.js";
+import { deleteAllDocuments } from "../services/documentService.js";
+import { setDocuments } from "../redux/documentSlice.js";
 
 const SettingsPage = () => {
     const { user } = useSelector(state => state.auth);

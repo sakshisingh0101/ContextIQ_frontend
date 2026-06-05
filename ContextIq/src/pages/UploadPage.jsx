@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import Sidebar from "../components/Sidebar";
-import { addDocument } from "../redux/documentSlice";
-import { uploadDocument } from "../services/documentService";
+import Sidebar from "../components/Sidebar.jsx";
+import { addDocument } from "../redux/documentSlice.js";
+import { uploadDocument } from "../services/documentService.js";
 
 const STEPS = [
     "Extracting text",

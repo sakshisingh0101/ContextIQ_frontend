@@ -2,18 +2,18 @@ import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 // import { setCredentials } from "./redux/authSlice";
-import { getProfile } from "./services/userService";
-import { setCredentials, setAuthLoading } from "./redux/authSlice";
-import LandingPage from "./pages/LandingPage";
-import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
-import OtpPage from "./pages/OtpPage";
-import Dashboard from "./pages/Dashboard";
-import UploadPage from "./pages/UploadPage";
-import ChatPage from "./pages/ChatPage";
-import SettingsPage from "./pages/SettingsPage";
-import ResultsPage from "./pages/ResultsPage";
-import ProtectedRoute from "./components/ProtectedRoute";
+import { getProfile } from "./services/userService.js";
+import { setCredentials, setAuthLoading } from "./redux/authSlice.jsx";
+import LandingPage from "./pages/LandingPage.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
+import SignupPage from "./pages/SignupPage.jsx";
+import OtpPage from "./pages/OtpPage.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import UploadPage from "./pages/UploadPage.jsx";
+import ChatPage from "./pages/ChatPage.jsx";
+import SettingsPage from "./pages/SettingsPage.jsx";
+import ResultsPage from "./pages/ResultsPage.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 const router = createBrowserRouter([
     { path: "/",          element: <LandingPage /> },

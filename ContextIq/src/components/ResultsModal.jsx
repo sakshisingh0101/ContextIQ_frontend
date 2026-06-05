@@ -11,7 +11,7 @@ const ResultsModal = ({ isOpen, data, onClose, onNavigate }) => {
                         onClick={onClose}
                         className="text-neutral-400 hover:text-white text-2xl leading-none"
                     >
-                        ×
+                        
                     </button>
                 </div>
 

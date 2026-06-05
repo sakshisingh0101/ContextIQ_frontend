@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import Header from "../components/Header";
-import { register } from "../services/authService";
+import Header from "../components/Header.jsx";
+import { register } from "../services/authService.js";
 
 const SignupPage = () => {
     const navigate = useNavigate();
