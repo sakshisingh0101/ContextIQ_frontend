@@ -8,7 +8,7 @@ import LandingPage from "./pages/LandingPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import OtpPage from "./pages/OtpPage.jsx";
-import Dashboard from "./pages/Dashboard.jsx";
+import Dashboard from "./pages/DashBoard.jsx";
 import UploadPage from "./pages/UploadPage.jsx";
 import ChatPage from "./pages/ChatPage.jsx";
 import SettingsPage from "./pages/SettingsPage.jsx";
