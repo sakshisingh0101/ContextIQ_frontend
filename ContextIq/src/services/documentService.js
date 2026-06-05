@@ -1,7 +1,7 @@
 const BASE = import.meta.env.VITE_API_URL;
 
 export const uploadDocument = (formData) =>
-    fetch(`${BASE}/api/v1llmEngine/uploadDocument`, {
+    fetch(`${BASE}/api/v1/llmEngine/uploadDocument`, {
         method: "POST",
         credentials: "include",
         body: formData  // FormData — NO Content-Type header, browser sets it
