@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux";
 // import { setCredentials } from "./redux/authSlice";
 import { getProfile } from "./services/userService.js";
-import { setCredentials, setAuthLoading } from "./redux/authSlice.jsx";
+import { setCredentials, setAuthLoading } from "./redux/authSlice.js";
 import LandingPage from "./pages/LandingPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
